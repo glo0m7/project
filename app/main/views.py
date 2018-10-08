@@ -1,10 +1,10 @@
 from flask import request
 from . import main
-
-from .form import NameForm
+from .forms import NameForm
 
 @main.route('/',methods=['GET','POST'])
 def index():
-    form = NameForm()
+    form = NameForm
     if form.validate_on_submit():
-        name = request.form
+        name = request.form.
+
